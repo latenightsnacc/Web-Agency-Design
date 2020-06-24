@@ -76,7 +76,8 @@ a.action-btn {
   padding: 10px 20px;
   -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
           box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-  color: black;
+  color: whitesmoke;
+  background-color: black;
   text-align: center;
   line-height: 20px;
 }
