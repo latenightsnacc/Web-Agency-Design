@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'navbar';
+@import 'header';
+@import 'portfolio';
+@import 'services';
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section-title {
+    font-family: $font;
+    text-shadow: $btn-shadow;
+    line-height: 55px;
+    padding: 7px 0px;
+}
+section {
+    min-height: 100vh;
+}
+section.header {
+    background-color: lightblue;
+}
+section.portfolio {
+    background-color: blueviolet;
+}
+section.what-we-do {
+    background-color: yellow;
+}
+section.about {
+    background-color: palevioletred;
+}
+section.contact {
+    background-color: grey;
+}
+
+.col-md-3{
+    background-color: salmon;
+}
+ .col-md-6 {
+    background-color: lightgrey;
+}
+.col-md-4 {
+    background-color: skyblue
+}
+ .col-md-8 {
+    background-color: steelblue;
+}
+.col-md-9 {
+    background-color: tan;
+}
+

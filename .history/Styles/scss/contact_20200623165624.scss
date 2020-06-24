@@ -1,0 +1,37 @@
+@import 'variables';
+
+.form-box {
+    position: relative;
+    .box{
+        height: 100%;
+        background-color: $dark;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+#contact-form {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px){
+    #contact-form {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

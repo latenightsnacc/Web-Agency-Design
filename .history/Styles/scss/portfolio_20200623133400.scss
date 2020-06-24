@@ -1,0 +1,28 @@
+@import 'variables';
+
+.portfolio-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    .portfolio-list {
+        li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+a.item {
+    color: $dark;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: $btn-shadow;
+}

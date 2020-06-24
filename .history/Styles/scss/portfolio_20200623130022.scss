@@ -1,0 +1,19 @@
+@import 'variables';
+
+.portfolio-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    .portfolio-list {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.outer {
+    height: 50px;
+    width: 50px;
+}

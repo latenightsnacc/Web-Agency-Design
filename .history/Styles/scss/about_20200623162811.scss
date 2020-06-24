@@ -1,0 +1,15 @@
+@import 'variables';
+
+.card {
+    width: 150px !important;
+}
+
+@media screen and (max-width:600px){
+    .cards-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end !important;
+        width: 100%;
+    } 
+}

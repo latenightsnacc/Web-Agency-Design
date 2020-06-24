@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'navbar';
+@import 'header';
+@import 'portfolio';
+@import 'services';
+@import 'about';
+@import 'contact';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: $font;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(255, 253, 253);
+}
+.uk-modal-close-full, .uk-close-large {
+    background-color: transparent !important;
+}
+section {
+    min-height: 100vh;
+}
+.section-title {
+    font-family: $font;
+    text-shadow: $btn-shadow;
+    line-height: 55px;
+    padding: 7px 0px;
+}
+
+
+section.contact,.col-md-3,.col-md-6.right,.col-md-4 {
+    background-color: #F8F8FF;
+}
+ .col-md-8,.col-md-9 {
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width:600px){
+    section {
+        min-height: 100vh;
+    }
+}
+

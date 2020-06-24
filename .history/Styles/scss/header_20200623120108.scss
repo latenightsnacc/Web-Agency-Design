@@ -1,0 +1,123 @@
+@import 'variables';
+
+.menuList {
+    a {
+        font-size: $fontSm;
+        color: $dark;
+        background-color: $light;
+        
+        .fa {
+            color: $dark;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            
+            
+            .fa {   
+                color: $dark;
+                transform: scale(1.2);
+                box-shadow: $btn-shadow;
+            }
+        }
+    }
+
+    a.active {
+        border: 2px solid $dark;
+        .fa {
+            color: $dark;
+            box-shadow: $btn-shadow;
+        }
+       
+    }
+}
+.header-text {
+    color: $dark;
+    font-family: $font;    
+}
+.content {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        font-size: 80px;
+        color: $dark;
+        line-height: 100px;
+    }
+    p{
+        padding-top: 30px;
+        font-size: $fontSm;
+        color: $dark;
+    }
+}
+a.action-btn {
+    border: 2px solid $dark;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: $btn-shadow;
+    color: $dark;
+    text-align: center;
+    line-height: 20px;
+    &:hover{
+        text-decoration: none;
+    }
+
+}
+@media screen and (max-width:600px){
+
+    .menuItems {
+        height: 30vh;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: center;
+    }
+    .menuList {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 15px;
+        }
+    }
+
+    .content {
+        display: block;
+        height: auto;
+        h1{
+            font-size: 40px;
+            line-height: 60px;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+    .text{
+        height: 70vh;
+        padding-left: 15px;
+    }
+    
+}
+@media screen and (min-width:601px){
+    .menuList {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end !important;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+}

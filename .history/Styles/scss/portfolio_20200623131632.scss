@@ -1,0 +1,29 @@
+@import 'variables';
+
+.portfolio-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    .portfolio-list {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+a.outer {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: $btn-shadow;
+    border: 1px solid $dark !important;
+}
+
+a.item {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid black !important;
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+
+.services {
+    position: relative;
+    min-height: 100vh;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $btn-shadow;
+    margin-left: 20px;
+}

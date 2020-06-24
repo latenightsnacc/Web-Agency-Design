@@ -1,0 +1,43 @@
+@import 'variables';
+
+.form-box {
+    position: relative;
+    .box{
+        height: 100%;
+        background-color: $dark;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+#contact-form {
+    display: block;
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid $dark ;
+    }
+}
+
+.submit-btn {
+    outline: none;
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width:601px){
+    #contact-form {
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,11 @@
+@import 'variables';
+
+.col-3, .col-4, .col{
+    width: 100%;
+
+    background-color: yellow;
+}
+.col-9, .col-8 {
+    width: 100%;
+    background-color: black;
+}
