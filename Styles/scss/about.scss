@@ -1,12 +1,13 @@
 @import 'variables';
 
+section.about {
+    box-shadow: $box-shadow;
+    background-color: white;
+}
 .card {
     width: 150px !important;
     border: none !important;
 }
-
-
-
 @media screen and (max-width:600px){
     .cards-center {
         display: flex;

@@ -5,6 +5,9 @@
 @import 'services';
 @import 'about';
 @import 'contact';
+@import 'background';
+@import 'modal';
+@import 'footer';
 
 *{
     margin: 0;
@@ -20,9 +23,10 @@
     }
 }
 
-body{
-    overflow-x: hidden;
-    background-color: rgb(255, 253, 253);
+html {
+    overflow-x: hidden !important;
+    background-color: whitesmoke;
+    width: 100%;
 }
 .uk-modal-close-full, .uk-close-large {
     background-color: transparent !important;
@@ -33,21 +37,29 @@ section {
 .section-title {
     font-family: $font;
     text-shadow: $btn-shadow;
-    line-height: 55px;
-    padding: 7px 0px;
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    padding: 10px 0px;
 }
 
-
-section.contact,.col-md-3,.col-md-6.right,.col-md-4 {
-    background-color: #F8F8FF;
+p {
+    color: black;
+    line-height: 40px;
+    font-size:22px;
+    font-family: $font;
+    font-weight: 500;
 }
- .col-md-8,.col-md-9 {
-    background-color: whitesmoke;
+.col-md-3,.col-md-6.right,.col-md-4,.col-md-8,.col-md-9 {
+    background-color: transparent;
 }
 
 @media screen and (max-width:600px){
-    section {
-        min-height: 100vh;
+    .section-title{
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
     }
 }
 

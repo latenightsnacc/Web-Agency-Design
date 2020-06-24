@@ -2,7 +2,6 @@
 .menuList a {
   font-size: 20px;
   color: black;
-  background-color: white;
 }
 
 .menuList a .fa {
@@ -19,6 +18,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+  background-color: white;
 }
 
 .menuList a:hover .fa {
@@ -72,7 +72,6 @@
 }
 
 a.action-btn {
-  border: 1px solid black;
   border-radius: 20px;
   padding: 10px 20px;
   -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
@@ -84,6 +83,38 @@ a.action-btn {
 
 a.action-btn:hover {
   text-decoration: none;
+  -webkit-transition: ease-in 5s;
+  transition: ease-in 5s;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 360px) {
+  .menuList a {
+    font-size: 20px;
+  }
+  .menuList a .fa {
+    color: black;
+    height: 40px;
+    width: 40px;
+  }
+  .menuList a:hover .fa {
+    color: black;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+            box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+  }
+  .content h1 {
+    padding-top: 30px;
+    font-size: 35px !important;
+    line-height: 40px;
+  }
+  .content p {
+    padding-top: 10px;
+  }
+  .text {
+    margin-bottom: 150px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {

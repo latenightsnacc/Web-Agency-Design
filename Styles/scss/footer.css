@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer p {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 601px) {
+  .footer p {
+    padding-left: 6%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

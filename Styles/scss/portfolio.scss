@@ -1,11 +1,15 @@
 @import 'variables';
 
+.portfolio{
+    background-color: #F8F8FF;
+    box-shadow: $box-shadow;
+}
 .portfolio-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-color: #F8F8FF;
+    
 
     .section-title {
         text-align: right;

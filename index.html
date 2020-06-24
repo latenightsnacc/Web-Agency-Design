@@ -13,8 +13,14 @@
     <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
     <title>Ceeless || Licorne Technologies</title>
 </head>
-<body>
-    <main class="wrapper">
+<body class="background">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <main class="wrapper  pt-3 pl-3 pr-3" uk-scrollspy="target: > section; cls: uk-animation-fade; delay:1000; repeat: true">
         <!--Navigation Bar-->
         <nav class="container navbar">
             <div class="logo">
@@ -32,88 +38,43 @@
         </nav>
         <!--Menu Modal-->
         <div id="menu-modal" class="uk-modal-full" uk-modal>
-            <div class="uk-modal-dialog">
+            <div class="uk-modal-dialog uk-animation-slide-right">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
                 <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
                 <div class="container">
                     <div class="row">
                         <!--Menu-->
                         <div class="col-md-4">
-                            <!--Menu icons-->
-                            <div class="menuItems">
-                                <ul class="menuList">
-                                    <li>
-                                        <a href="index.html" ><i class="fa fa-home"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#about" class="active"><i class="fa fa-info"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contact"><i class="fa fa-send-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="menu-title">
+                                <li>U</li>
+                                <li>N</li>
+                                <li>E</li>
+                                <li>M</li>
+                                <li class="mobile">MENU</li>
+                            </ul>
                         </div>
                         <!--Contact us-->
                         <div class="col-md-8">
-                            <!--Slideshow-->
-                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false; autoplay: true; autoplay-interval:6000">
-
-                                <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true;">
-                                    <li>
-                                        <a href="https://eben.ng/?v=330a840f8637" target="_blank" title="Visit site">
-                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                                <img src="assets/Eben.png" alt="Eben website screenshot" uk-cover>
-                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
-                                                    <h2 class="uk-margin-remove item-title">Eben</h2>
-                                                </div>
-                                            </div>
-                                        </a>   
+                            <!--Menu icons-->
+                            <div class="menuItems">
+                                <ul class="menuList">
+                                    <li >
+                                        <a href="index.html" ><i class="fa fa-home"></i><span class="menu-link">Home</span> </a>
                                     </li>
-                                    <li>
-                                        <a href="http://bulliongroup.com.ng/" target="_blank" title="Visit site">
-                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                                <img src="assets/Bullion.png" alt="The Bullion Group website screenshot" uk-cover>
-                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
-                                                    <h2 class="uk-margin-remove item-title">The Bullion Group</h2>
-                                                </div>
-                                            </div>
-                                        </a>
+                                    <li class="uk-animation-slide-right">
+                                      
+                                        <a href="index.html#about"><i class="fa fa-info"></i><span class="menu-link">About us</span></a>
                                     </li>
-                                    <li>
-                                        <a href="https://coamana.com/" target="_blank" title="Visit site">
-                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                                <img src="assets/Coamana.png" alt="Coamana website screenshot" uk-cover>
-                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
-                                                    <h2 class="uk-margin-remove item-title">Coamana</h2>
-                                                </div>
-                                            </div> 
-                                        </a>
-                                        
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i><span class="menu-link">portfolio</span></a>
                                     </li>
-                                    <li>
-                                        <a href="https://nexianigeria.com/" target="_blank" title="Visit site">
-                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                                <img src="assets/Nexia.png" alt="Nexia  Nigeria website screenshot" uk-cover>
-                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
-                                                    <h2 class="uk-margin-remove item-title">Nexia Nigeria</h2>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        
-                                    </li>
-                                    <li>
-                                        <a href="https://nexianigeria.com/" target="_blank" title="View App">
-                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                                <img src="assets/adiala.jpg" alt="Adialaway mobile app screenshot" uk-cover>
-                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
-                                                    <h2 class="uk-margin-remove item-title">Adialaway</h2>
-                                                </div>
-                                            </div>   
-                                        </a>
-                                        
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#contact"><i class="fa fa-send-o"></i><span class="menu-link">Contact us</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,7 +84,7 @@
             </div>
         </div>
         <!--Hero section-->
-        <section class="header">
+        <section class="header" id="header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -132,10 +93,10 @@
                             <div class="menuItems">
                                 <ul class="menuList">
                                     <li>
-                                        <a href="index.html" ><i class="fa fa-home"></i></a>
+                                        <a href="index.html" class="active"><i class="fa fa-home"></i></a>
                                     </li>
                                     <li>
-                                        <a href="index.html#about" class="active"><i class="fa fa-info"></i></a>
+                                        <a href="index.html#about" ><i class="fa fa-info"></i></a>
                                     </li>
                                     <li>
                                         <a href="index.html#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i></a>
@@ -153,7 +114,7 @@
                                 <h1>Ceeless Designs the future for those who create it.</h1>
                                 <p>Create the ultimate experience with Ceeless.</p>
                                 <!--Action Btn-->
-                                <a href="#contact-modal" uk-toggle class="action-btn">Start &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                                <a href="mailto:hello@ceeless.com" class="action-btn">Start &nbsp;<i class="fa fa-long-arrow-right"></i></a>
                             </div>   
                         </div>
                     </div>
@@ -162,15 +123,15 @@
             </div>
         </section>
         <!--Portfolio section-->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="row">
                     <!--Images Slider-->
                     <div class="col-md-6">
                         <!--Slideshow-->
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false; autoplay: true; autoplay-interval:6000">
+                        <div class="uk-position-relative uk-visible-toggle uk-light"  uk-slideshow="ratio: false; autoplay: true; autoplay-interval:6000">
 
-                            <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true;">
+                            <ul class="uk-slideshow-items" uk-height-viewport="offset-top:false">
                                 <li>
                                     <a href="https://eben.ng/?v=330a840f8637" target="_blank" title="Visit site">
                                         <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
@@ -261,8 +222,14 @@
             </div>
         </section>
         <!--What we do section-->
-        <section class="what-we-do">
-            <div class="container">
+        <section class="what-we-do" id="what-we-do">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="container outer">
                 <div class="row">
                     <!--What we do text-->
                     <div class="col-md-4">
@@ -302,7 +269,7 @@
             </div>
         </section>
         <!--About section-->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="section-title">About us</h2>
                 <p>Ceeless is a web design and development agency founded in 2016,
@@ -341,73 +308,27 @@
             </div>
         </section>
         <!--Contact section-->
-        <section class="contact">
-            <div class="container">
+        <section class="contact" id="contact">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="container contact-box">
                 <h2 class="section-title">Contact us</h2>
                 <p>Work with us on your next project or get in touch for a chat.</p>
-            </div>
-            <div class="container">
-                <div class="form-box">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box"></div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form">
-                                <form method="POST" action="" id="contact-form">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <label class="form-label">Name</label>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="name" id="name" required/>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <label class="form-label">Email</label>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <input type="email" name="email" id="email" required/>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <label class="form-label">Phone Number</label>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <input type="tel" name="phone" id="phone" required/>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <label class="form-label">Message</label>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <textarea  name="message" id="message" rows="4" cols="23"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2"></div>
-                                        <div class="col-sm-10">
-                                            <button class="submit-btn">Send</button> 
-                                        </div>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+                <p> <i class="fa fa-map-marker"></i>No 19 Kaltungo Street, Garki 2, Abuja Nigeria.</p>
+                <p><a href="mailto:egonubuchi97@gmail.com" class="contact-link"><i class="fa fa-envelope"></i>  hello@ceeless.com</a></p>
+                <p><a href="tel:+2348129793809" class="contact-link"> <i class="fa fa-phone"></i>  (+234) 08129793809</a></p>
                 
             </div>
         </section>
     </main>
     
     <!--Footer-->
-    <footer class="footer">
-        <p>&copy;Ceeless Designs | Licorne Technologies</p>
+    <footer class="footer pl-3">
+        <p class="">&copy;Ceeless Designs | Licorne Technologies</p>
     </footer>  
    
    <!-- UIkit JS -->
