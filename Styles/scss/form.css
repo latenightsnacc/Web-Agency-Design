@@ -12,9 +12,14 @@
 }
 
 .alert-success {
-  background-color: snow !important;
+  background-color: white !important;
   color: black !important;
-  border: 1px solid snow !important;
+  border: 1px solid whitesmoke !important;
+  padding: 7px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .phone-btn {
