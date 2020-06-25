@@ -55,7 +55,6 @@ $(".contact-form")
     'use strict';
     var form = $('.contact-form'),
         message = $('.contact__msg'),
-        // subject = $( "#email-subject" ).val(),
         form_data;
     // Success function
     function done_func(response) {

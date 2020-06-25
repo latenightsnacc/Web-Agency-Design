@@ -9,10 +9,6 @@
     line-height: 50px;
     font-weight: 600;
 }
-.alert-success {
-    background-color: snow !important;
-    color: black !important;
-}
 .contact-details {
     a{
         color: #333;
@@ -126,12 +122,7 @@
     }
 }
 
-@media (min-width: 768px) {
-    .contact-wrap {
-        width: 60%;
-        margin: auto;
-    }
-}
+
 /*----page styles---*/
 .contact-wrap {
     padding: 15px;

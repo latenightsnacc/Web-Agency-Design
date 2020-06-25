@@ -70,7 +70,6 @@
 
 .uk-modal-dialog .menuList li a .menu-link {
   padding-left: 20px;
-  text-transform: capitalize;
   color: black;
   font-size: 50px;
   font-weight: 500;
@@ -217,7 +216,7 @@
             align-items: center;
   }
   .uk-modal-dialog .menuList li a .menu-link {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 }
 /*# sourceMappingURL=modal.css.map */

@@ -6,7 +6,7 @@
         $mail_to = "egonubuchi97@gmail.com";
         
         # Sender Data
-        $subject = trim($_POST["subject"]);
+        $subject = trim($_POST["email-subject"]);
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);

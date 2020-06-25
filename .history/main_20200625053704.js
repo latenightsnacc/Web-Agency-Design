@@ -53,9 +53,8 @@ $(".contact-form")
 // Send Form
 (function ($) {
     'use strict';
-    var form = $('.contact-form'),
+    var form = $('.contact__form'),
         message = $('.contact__msg'),
-        // subject = $( "#email-subject" ).val(),
         form_data;
     // Success function
     function done_func(response) {
@@ -64,7 +63,7 @@ $(".contact-form")
         setTimeout(function () {
             message.fadeOut();
         }, 2000);
-        form.find('input:not([type="submit"]), select, textarea').val('');
+        form.find('input:not([type="submit"]), textarea').val('');
     }
     // fail function
     function fail_func(data) {

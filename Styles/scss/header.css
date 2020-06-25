@@ -89,7 +89,7 @@ a.action-btn:hover {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   .menuList a {
     font-size: 20px;
   }
@@ -107,7 +107,7 @@ a.action-btn:hover {
   }
   .content h1 {
     padding-top: 30px;
-    font-size: 35px !important;
+    font-size: 30px !important;
     line-height: 40px;
   }
   .content p {
@@ -145,7 +145,7 @@ a.action-btn:hover {
             justify-content: flex-start;
   }
   .menuList li {
-    margin-right: 15px;
+    margin-right: 7px;
   }
   .content {
     display: block;
