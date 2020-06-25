@@ -123,12 +123,12 @@ a.action-btn {
     }
     .menuList {
         display: flex;
-        width: 100%;
+        width: 100vw;
         align-items: center;
         justify-content: flex-start;
 
         li {
-            margin-right: 7px;
+            margin-right: 3px;
         }
     }
 
