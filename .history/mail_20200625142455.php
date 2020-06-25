@@ -7,7 +7,6 @@
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $formSubject = trim($_POST["subject"]);
-        $phone = trim($_POST["phone"]);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
@@ -27,7 +26,6 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Phone: $phone\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.

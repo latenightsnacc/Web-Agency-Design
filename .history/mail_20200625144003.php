@@ -1,5 +1,7 @@
 <?php
 
+    var_dump($_POST);
+    die();
     // Only process POST requests.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.

@@ -433,9 +433,11 @@
                         <a href="tel:+2348129793809">(+234) 08129793809</a>
                     </div>
                     <div class="contact-wrap">
-                        <form name="email-form" id="email-form" method="POST" action="/mail.php" class="contact-form">
+                        <form  id="email-form" method="POST" action="mail.php" class="contact-form">
                             <div class="col-sm-12">
-                                <div id="form-msg"></div>
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                    Your message was sent successfully.
+                                </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="input-block">
@@ -472,7 +474,7 @@
                             <div class="col-sm-12">
                                 <div class="input-block textarea">
                                     <label for="message">Tell us about your project</label>
-                                    <textarea name="message" id="message" rows="3" type="text" class="form-control"></textarea>
+                                    <textarea name="message id="message" rows="3" type="text" class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-12">
