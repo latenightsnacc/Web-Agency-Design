@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
+    <title>Ceeless || Licorne Technologies</title>
+</head>
+<body class="background">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <main class="wrapper  pt-3 pl-3 pr-3" uk-scrollspy="target: > section; cls: uk-animation-fade; delay:1000; repeat: true">
+        <!--Navigation Bar-->
+        <nav class="container navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="" alt="Ceeless logo">
+                </a>
+            </div>
+            <div class="menu">
+                <a class="menuIcon" href="#menu-modal" uk-toggle>
+                    <span class="long-bar"></span>
+                    <span class="short-bar"></span>
+                    <span class="long-bar"></span>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- This is a button toggling the modal with the outside close button -->
+        <button class="cta-btn" type="button" uk-toggle="target: #contact-modal">
+            <i class="fa fa-envelope"></i>
+        </button>
+
+        <!-- This is the modal with the outside close button -->
+        <div id="contact-modal" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="container">
+                    <div class="form-title">Talk to us</div>
+                    <p>Work with us on your next project or get in touch for a chat.</p>
+                    <div class="contact-details">
+                        <a href="tel:+2348129793809">(+234) 08129793809</a>
+                    </div>
+                    <div class="contact-wrap">
+                        <form action="mail.php" class="contact-form">
+                            <div class="col-sm-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                    Your message was sent successfully.
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="name">Name</label>
+                                    <input name="name" id="name" class="form-control" type="text" required="true">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="email">Email</label>
+                                    <input name="email" id="email" class="form-control" type="email" required="true">
+                                </div>
+                            </div>
+                            <div class="col-sm-12" >
+                                <div id="phone-btn" title="Click to add phone number" class="phone-btn">Add Phone Number?</div> 
+                                <div class="input-block" id="phone-input">
+                                    <label for="phone">Phone</label>
+                                    <input name="phone" id="phone" class="form-control" type="tel">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="subject">Message Subject</label>
+                                    <select  name="subject" id="subject" class="form-control" type="text" required="true">
+                                        <option selected></option>
+                                        <option id="Brand-identity" value="Brand Identity">Brand Identity</option>
+                                        <option id="Web-design" value="Web Design">Web Design</option>
+                                        <option id="Web-development" value="Web Development">Web Development</option>
+                                        <option id="Mobile-App-Development" value="Mobile App Development">Mobile App Development</option>
+                                        <option id="UI-UX" value="UI/UX">UI/UX</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block textarea">
+                                    <label for="message">Tell us about your project</label>
+                                    <textarea name="message id="message" rows="3" type="text" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="square-button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--Form-->
+          <div class="contact-wrap">
+              <form action="" class="contact-form">
+                  <div class="col-sm-12">
+                      <div class="input-block">
+                          <label for="name">Name</label>
+                          <input class="form-control" type="text" required="true">
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="input-block">
+                          <label for="">Email</label>
+                          <input class="form-control" type="email" required="true">
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="input-block">
+                          <label for="">Message Subject</label>
+                          <select class="form-control" type="text" required="true">
+                              <option selected></option>
+                              <option id="brand-identity">Brand Identity</option>
+                              <option id="brand-identity">Web Design</option>
+                              <option id="brand-identity">Web Development</option>
+                              <option id="brand-identity">Mobile App Development</option>
+                              <option id="brand-identity">UI/UX</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="input-block textarea">
+                          <label for="">Tell us about your project</label>
+                          <textarea rows="3" type="text" class="form-control"></textarea>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <button class="square-button">Send</button>
+                  </div>
+              </form>
+          </div>
+
+    </main>
+    
+    <!--Footer-->
+    <footer class="footer pl-3">
+        <p class="">&copy;Ceeless Designs | Licorne Technologies</p>
+    </footer>  
+   
+   <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+   <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

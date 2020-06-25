@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,uFAAI;ADEZ,AAAA,eAAe,CAAC;EACZ,QAAQ,EAAE,QAAQ;CAUrB;;AAXD,AAGI,eAHW,CAGX,UAAU,CAAC;EAGP,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,EAAE;CACd",
+    "sources": [
+        "floatingIcons.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "floatingIcons.css"
+}

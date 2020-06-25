@@ -14,6 +14,17 @@
 .alert-success {
   background-color: snow !important;
   color: black !important;
+  border: 1px solid snow !important;
+}
+
+.phone-btn {
+  padding-left: 10px;
+  cursor: pointer;
+  color: grey;
+}
+
+.phone-btn:hover {
+  color: black;
 }
 
 .contact-details {

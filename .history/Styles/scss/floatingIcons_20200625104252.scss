@@ -1,0 +1,15 @@
+@import 'variables';
+
+.floating-icons {
+    position: relative;
+
+    .menuItems {
+        // display: flex;
+        // flex-direction: row !important;
+        position: fixed;
+        top: 100;
+        bottom: 10;
+        right: 0;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,14 @@
+@import 'variables';
+
+.floating-icons {
+    position: relative;
+
+    .menuItems {
+        // display: flex;
+        // flex-direction: row !important;
+        position: fixed;
+        top: 100vh;
+        bottom: 0;
+        z-index: 10;
+    }
+}

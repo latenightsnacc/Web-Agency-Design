@@ -1,0 +1,58 @@
+@import 'variables';
+
+section.about {
+    box-shadow: $box-shadow;
+    background-color: white;
+    position: relative;
+    
+    .menuItems {
+        // display: flex;
+        // flex-direction: row !important;
+        position: absolute;
+        bottom: 70px;
+        right: 10px;
+        z-index: 10;
+    }
+}
+.card {
+    width: 150px !important;
+    border: none !important;
+}
+@media screen and (max-width:600px){
+    .cards-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+    }
+    
+    section.about {
+        
+        .menuItems {
+            // display: flex;
+            // flex-direction: row !important;
+            position: absolute;
+            bottom: -100px;
+            left: 20px;
+            z-index: 10;
+        }
+    }
+}
+
+@media screen and (min-width:601px){
+    .cards-center {
+        display: flex;
+        justify-content: end;
+        align-items: center ;
+        width: 100%;
+
+    } 
+
+    section.about{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
