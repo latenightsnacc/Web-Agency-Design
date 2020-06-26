@@ -10,7 +10,7 @@ section.what-we-do {
 section.what-we-do .menuItems {
   position: absolute;
   bottom: 70px;
-  right: 25px;
+  right: 40px;
   z-index: 10;
 }
 

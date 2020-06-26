@@ -29,14 +29,14 @@
           box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
 }
 
-.menuList a.active {
-  border: 2px solid black;
-}
-
 .menuList a.active .fa {
   color: black;
   -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
           box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+}
+
+section.header a.active {
+  border: 2px solid black;
 }
 
 .header-text {

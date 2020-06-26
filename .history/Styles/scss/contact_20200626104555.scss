@@ -7,9 +7,6 @@ section.contact{
     width:100vw;
     overflow: hidden;
     
-    .contact-details {
-      border-bottom: 0px !important;
-    }
     .menuItems {
         // display: flex;
         // flex-direction: row !important;
@@ -100,14 +97,12 @@ section.contact{
     justify-content: center;
     border: 1px solid white;
     align-items: center;
-    background-color: white;
+    background-color: whitesmoke;
     margin-right: 10px;
-    
 
     &:hover {
         color:black;
-        box-shadow: $box-shadow;
-        
+        box-shadow: $btn-shadow;
     }
 }
 

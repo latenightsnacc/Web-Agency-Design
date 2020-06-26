@@ -7,10 +7,14 @@ section.contact {
   overflow: hidden;
 }
 
+section.contact .contact-details {
+  border-bottom: 0px !important;
+}
+
 section.contact .menuItems {
   position: absolute;
   bottom: 70px;
-  right: 25px;
+  right: 40px;
   z-index: 10;
 }
 
@@ -134,14 +138,14 @@ section.contact .cube:nth-child(6) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
   margin-right: 10px;
 }
 
 .contact-link:hover {
   color: black;
-  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 @media screen and (max-width: 600px) {
