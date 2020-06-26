@@ -46,7 +46,7 @@ section.about .menuItems .menuList a .fa {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    right: 8px;
+    right: 10px;
     z-index: 10;
   }
 }

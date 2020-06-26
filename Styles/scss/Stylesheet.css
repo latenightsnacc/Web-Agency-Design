@@ -329,6 +329,7 @@ a.item.active {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    right: 10px;
     z-index: 10;
   }
 }
@@ -493,6 +494,7 @@ section.what-we-do .cube:nth-child(6) {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    right: 10px;
     z-index: 10;
   }
 }
@@ -559,7 +561,7 @@ section.about .menuItems .menuList a .fa {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    right: 8px;
+    right: 10px;
     z-index: 10;
   }
 }
@@ -1052,11 +1054,19 @@ section.contact .cube:nth-child(6) {
   background-color: white !important;
   color: black !important;
   border: 1px solid whitesmoke !important;
-  padding: 7px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  padding: 7px !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+
+.alert-danger {
+  margin-bottom: 10px !important;
+  padding: 7px !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
 
 .phone-btn {
@@ -1107,6 +1117,10 @@ section.contact .cube:nth-child(6) {
 .contact-form .input-block.textarea .form-control {
   height: auto;
   resize: none;
+}
+
+input, textarea {
+  padding: 5px;
 }
 
 .contact-form .input-block label {

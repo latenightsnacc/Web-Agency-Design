@@ -85,6 +85,7 @@ a.item.active {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    right: 10px;
     z-index: 10;
   }
 }

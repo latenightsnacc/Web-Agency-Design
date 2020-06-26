@@ -15,11 +15,19 @@
   background-color: white !important;
   color: black !important;
   border: 1px solid whitesmoke !important;
-  padding: 7px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  padding: 7px !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+
+.alert-danger {
+  margin-bottom: 10px !important;
+  padding: 7px !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
 
 .phone-btn {
@@ -70,6 +78,10 @@
 .contact-form .input-block.textarea .form-control {
   height: auto;
   resize: none;
+}
+
+input, textarea {
+  padding: 5px;
 }
 
 .contact-form .input-block label {

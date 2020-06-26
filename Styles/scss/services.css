@@ -159,6 +159,7 @@ section.what-we-do .cube:nth-child(6) {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    right: 10px;
     z-index: 10;
   }
 }
