@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
 .background {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   min-height: 100vh;
   min-width: 100vw;
@@ -17,7 +17,7 @@
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #e1e1e1;
+  border: solid 1px #bababa;
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -27,7 +27,7 @@
 }
 
 .background .cube:nth-child(2n) {
-  border-color: white;
+  border-color: #ededed;
 }
 
 .background .cube:nth-child(2) {

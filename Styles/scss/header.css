@@ -71,22 +71,47 @@ section.header a.active {
   color: black;
 }
 
-a.action-btn {
-  border-radius: 20px;
+.action-btn {
   padding: 10px 20px;
-  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-  color: whitesmoke;
-  background-color: black;
+  color: black;
+  text-transform: capitalize;
+  background-color: transparent;
   text-align: center;
   line-height: 20px;
+  border: 1px solid black;
+  outline: none;
 }
 
-a.action-btn:hover {
+.action-btn:hover, .action-btn:focus, .action-btn:active {
   text-decoration: none;
-  -webkit-transition: ease-in 5s;
-  transition: ease-in 5s;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+.navigate {
   border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigate:hover {
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 320px) {

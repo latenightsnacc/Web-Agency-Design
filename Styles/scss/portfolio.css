@@ -6,11 +6,8 @@ section.portfolio {
   position: relative;
 }
 
-section.portfolio .menuItems {
-  position: absolute;
-  bottom: 70px;
-  right: 10px;
-  z-index: 10;
+section.portfolio .section-title {
+  padding: 15px;
 }
 
 .portfolio-menu {
@@ -24,12 +21,7 @@ section.portfolio .menuItems {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-}
-
-.portfolio-menu .section-title {
-  text-align: right;
-  padding-right: 30px;
+  height: 80vh;
 }
 
 .portfolio-menu .portfolio-list li {

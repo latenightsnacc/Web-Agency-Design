@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
+    <title>Ceeless || Licorne Technologies</title>
+
+    <style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loader { display: none;  }
+		.js #loader { display: block; }
+	</style>
+	
+</head>
+<body class="background">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <main class="wrapper pt-3" uk-scrollspy="target: > section; cls: uk-animation-fade; delay:1000; repeat: true">
+        
+        <!--PreLoader-->
+        <div class="loader" id="loader">
+            <div class="letters">
+              <h3>Welcome</h3>
+            </div>
+            <span></span>
+        </div> 
+        <!--Navigation Bar-->
+        <nav class="container-fluid  navbar">
+            <div class="logo pl-4" >
+                <a href="index.html">
+                    <img src="assets/Logo/ceeless.png" alt="Ceeless logo" style="width: 120px;">
+                </a>
+            </div>
+            <div class="menu pr-4">
+                <a class="menuIcon" href="#menu-modal" uk-toggle>
+                    <span class="long-bar"></span>
+                    <span class="short-bar"></span>
+                    <span class="long-bar"></span>
+                </a>
+            </div>
+        </nav>
+        <!--Menu Modal-->
+        <div id="menu-modal" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-animation-slide-right">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="container">
+                    <div class="row">
+                        <!--Menu-->
+                        <div class="col-md-4 col-lg-4">
+                            <ul class="menu-title">
+                                <li>U</li>
+                                <li>N</li>
+                                <li>E</li>
+                                <li>M</li>
+                                <li class="mobile">MENU</li>
+                            </ul>
+                        </div>
+                        <!--Contact us-->
+                        <div class="col-md-8 col-lg-8">
+                            <!--Menu icons-->
+                            <div class="menuItems">
+                                <ul class="menuList">
+                                    <li >
+                                        <a href="index.html" ><i class="fa fa-home"></i><span class="menu-link">Welcome</span> </a>
+                                    </li>
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i><span class="menu-link">What we've done</span></a>
+                                    </li>
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#what-we-do"><i class="fa fa-info" aria-hidden="true"></i><span class="menu-link">What we do</span></a>
+                                    </li>
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#about"><i class="fa fa-users"></i><span class="menu-link">About us</span></a>
+                                    </li>
+            
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#contact"><i class="fa fa-send-o"></i><span class="menu-link">Talk to us</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero section-->
+        <section class="header" id="header">
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h1>At Ceeless we craft innovation with passion.</h1>
+                        <p>Create the ultimate experience with Ceeless.</p>
+                        <!--Action Btn-->
+                        <a uk-toggle="target: #contact-modal" class="action-btn">Start &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        
+        <!--What we do section-->
+        <section class="what-we-do" id="what-we-do">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="container outer">
+                <div class="row">
+                    <!--What we do text-->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="section-title-box">
+                            <div class="container">
+                                <h2 class="section-title">What we do</h2>
+                                <p>We are focused on creating an online presence 
+                                for brands and businesses that will drive growth.
+                                </p>
+                            </div>
+                        </div>   
+                    </div>
+                    <!--What we do visuals-->
+                    <div class="col-md-8 col-lg-8 col-sm-12">
+                        <div class="services">
+                            <div class="d-flex flex-wrap text-center">
+                                <div class="dot">
+                                    <div class="service-title">Brand Identity</div>
+                                </div> 
+                                <div class="dot">
+                                    <div class="service-title">Web Design</div>
+                                </div> 
+                                <div class="dot">
+                                    <div class="service-title">Web Development</div>
+                                </div> 
+                                <div class="dot">
+                                    <div class="service-title">Mobile App Development</div>
+                                </div> 
+                                <div class="dot">
+                                    <div class="service-title">UI/UX</div>
+                                </div> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio section-->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">What we've done</h2>
+                <div class="row">
+                    <!--Images Slider-->
+                    <div class="col-sm-12 col-md-10 col-lg-10">
+                        <!--Slideshow-->
+                        <div class="portfolio-menu">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push; autoplay: true; autoplay-interval:6000">
+
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <a href="https://eben.ng/?v=330a840f8637" target="_blank" title="Visit site">
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="assets/Eben.png" alt="Eben website screenshot" uk-cover>
+                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
+                                                    <h2 class="uk-margin-remove item-title">Eben</h2>
+                                                </div>
+                                            </div>
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="http://bulliongroup.com.ng/" target="_blank" title="Visit site">
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="assets/Bullion.png" alt="The Bullion Group website screenshot" uk-cover>
+                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
+                                                    <h2 class="uk-margin-remove item-title">The Bullion Group</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://coamana.com/" target="_blank" title="Visit site">
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="assets/Coamana.png" alt="Coamana website screenshot" uk-cover>
+                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
+                                                    <h2 class="uk-margin-remove item-title">Coamana</h2>
+                                                </div>
+                                            </div> 
+                                        </a>   
+                                    </li>
+                                    <li>
+                                        <a href="https://nexianigeria.com/" target="_blank" title="View">
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="assets/Nexia.png" alt="Nexia Nigeria Website" uk-cover>
+                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
+                                                    <h2 class="uk-margin-remove item-title">Nexia Nigeria</h2>
+                                                </div>
+                                            </div>   
+                                        </a>     
+                                    </li>
+                                    <li>
+                                        <a href="https://play.google.com/store/apps/details?id=com.adialaway.main" target="_blank" title="View">
+                                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                                <img src="assets/adiala.jpg" alt="Adialaway mobile app screenshot" uk-cover>
+                                                <div class="uk-position-bottom-left uk-position-small uk-text-center uk-light">
+                                                    <h2 class="uk-margin-remove item-title">Adialaway</h2>
+                                                </div>
+                                            </div>   
+                                        </a>     
+                                    </li>
+                                </ul>
+                            
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <a href="#" target="_blank">
+                            <img src="assets/Logo/nexia-logo (1).png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <a href="#" target="_blank">
+                            <img src="assets/Logo/the-bullion-group-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <a href="#" target="_blank">
+                            <img src="assets/Logo/coamana-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <a href="#" target="_blank">
+                            <img src="assets/Logo/adialaway-logo (1).png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="/ceeless.pdf" class="item active" download="Ceeless Portfolio">
+                        <i class="fa fa-download"></i> 
+                    </a> Download our brochure.
+                </div>
+            </div>
+        </section>
+        
+
+        <!--About section-->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About us</h2>
+                <p>Ceeless is a web design and development agency founded in 2016,
+                    it became  part of the Licorne Technology group in February 2020.
+                </p>
+                <p>Ceeless is focused on supporting Nigerian brands and businesses online.</p>
+            </div>
+        </section>
+        <!--Contact section-->
+        <section class="contact" id="contact">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="container contact-box">
+                <h2 class="section-title">Talk to us</h2>
+                <p>Work with us on your next project or get in touch for a chat.</p>
+                <p> <i class="fa fa-map-marker"></i>No 19 Kaltungo Street, Garki 2, Abuja Nigeria.</p>
+                <div class="contact-details">
+                    <a href="tel:+2348129793809" class="contact-link">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                    <a uk-toggle="target: #contact-modal" class="contact-link">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- This is the modal with the outside close button -->
+        <div id="contact-modal" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="container">
+                    <div class="form-title">Talk to us</div>
+                    <p>Work with us on your next project or get in touch for a chat.</p>
+                    <div class="contact-details">
+                        <a href="tel:+2348129793809">(+234) 08129793809</a>
+                    </div>
+                    <div class="contact-wrap">
+                        <form name="email-form" id="email-form" method="POST" action="/mail.php" class="contact-form">
+                            <div class="col-sm-12">
+                                <div id="form-msg"></div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="name">Name</label>
+                                    <input name="name" id="name" class="form-control" type="text" required="true">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="email">Email</label>
+                                    <input name="email" id="email" class="form-control" type="email" required="true">
+                                </div>
+                            </div>
+                            <div class="col-sm-12" >
+                                <div class="input-block">
+                                    <label for="phone">Phone</label>
+                                    <input name="phone" id="phone" class="form-control" type="tel">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="subject">Message Subject</label>
+                                    <select  name="subject" id="subject" class="form-control" type="text" required="true">
+                                        <option selected></option>
+                                        <option id="Brand-identity" value="Brand Identity">Brand Identity</option>
+                                        <option id="Web-design" value="Web Design">Web Design</option>
+                                        <option id="Web-development" value="Web Development">Web Development</option>
+                                        <option id="Mobile-App-Development" value="Mobile App Development">Mobile App Development</option>
+                                        <option id="UI-UX" value="UI/UX">UI/UX</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block textarea">
+                                    <label for="message">Tell us about your project</label>
+                                    <textarea name="message" id="message" rows="3" type="text" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="square-button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!--Footer-->
+    <footer class="footer pl-3">
+        <p class="">&copy;Ceeless Designs | Licorne Technologies</p>
+    </footer>  
+   
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Js/form.js"></script>
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.loader');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    </script>
+</body>
+</html>

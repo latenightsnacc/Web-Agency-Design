@@ -29,6 +29,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  border: .5px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  padding: 5px;
+  background-color: transparent;
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {
@@ -126,22 +139,47 @@ section.header a.active {
   color: black;
 }
 
-a.action-btn {
-  border-radius: 20px;
+.action-btn {
   padding: 10px 20px;
-  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-  color: whitesmoke;
-  background-color: black;
+  color: black;
+  text-transform: capitalize;
+  background-color: transparent;
   text-align: center;
   line-height: 20px;
+  border: 1px solid black;
+  outline: none;
 }
 
-a.action-btn:hover {
+.action-btn:hover, .action-btn:focus, .action-btn:active {
   text-decoration: none;
-  -webkit-transition: ease-in 5s;
-  transition: ease-in 5s;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+.navigate {
   border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigate:hover {
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 320px) {
@@ -250,11 +288,8 @@ section.portfolio {
   position: relative;
 }
 
-section.portfolio .menuItems {
-  position: absolute;
-  bottom: 70px;
-  right: 10px;
-  z-index: 10;
+section.portfolio .section-title {
+  padding: 15px;
 }
 
 .portfolio-menu {
@@ -268,12 +303,7 @@ section.portfolio .menuItems {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-}
-
-.portfolio-menu .section-title {
-  text-align: right;
-  padding-right: 30px;
+  height: 80vh;
 }
 
 .portfolio-menu .portfolio-list li {
@@ -753,7 +783,7 @@ section.contact .cube:nth-child(6) {
 }
 
 .background {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   min-height: 100vh;
   min-width: 100vw;
@@ -770,7 +800,7 @@ section.contact .cube:nth-child(6) {
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #e1e1e1;
+  border: solid 1px #bababa;
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -780,7 +810,7 @@ section.contact .cube:nth-child(6) {
 }
 
 .background .cube:nth-child(2n) {
-  border-color: white;
+  border-color: #ededed;
 }
 
 .background .cube:nth-child(2) {
@@ -1351,7 +1381,7 @@ html, body {
 
 html {
   overflow-x: hidden !important;
-  background-color: whitesmoke;
+  background-color: white;
   width: 100%;
 }
 

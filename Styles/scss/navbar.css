@@ -17,6 +17,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  border: .5px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  padding: 5px;
+  background-color: transparent;
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {
