@@ -69,6 +69,10 @@ $(".contact-form")
         }
     })
 
+
+// Display phone input box
+
+
 // Form submission
 $(function() {
     // Get the form.

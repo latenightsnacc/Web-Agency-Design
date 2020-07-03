@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
 .navbar {
   width: 100%;
@@ -31,7 +41,7 @@
           justify-content: center;
   z-index: 10;
   padding: 7px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {
@@ -68,6 +78,9 @@
 @media screen and (max-width: 600px) {
   #download {
     display: none;
+  }
+  .menuIcon {
+    bottom: 10% !important;
   }
 }
 
@@ -167,6 +180,14 @@
   }
   .content p {
     padding-top: 10px;
+  }
+  section.header #start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigate {
+    display: none;
   }
 }
 
@@ -699,7 +720,7 @@ section.contact .cube:nth-child(6) {
 }
 
 .uk-modal-dialog {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -736,7 +757,7 @@ section.contact .cube:nth-child(6) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
   color: #000;
 }
 
@@ -749,7 +770,7 @@ section.contact .cube:nth-child(6) {
 
 .uk-modal-dialog .container {
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
 }
 
 .uk-modal-dialog .cube {
@@ -1058,7 +1079,7 @@ input, textarea {
 
 /*----page styles---*/
 .contact-wrap {
-  padding: 15px;
+  padding: 0px;
 }
 
 .footer {
@@ -1102,7 +1123,7 @@ input, textarea {
 
 .loader_bg .loader::before, .loader_bg .loader::after {
   content: '';
-  border: 1em solid #000;
+  border: 1em solid rgba(51, 51, 51, 0.5);
   border-radius: 50%;
   width: inherit;
   height: inherit;

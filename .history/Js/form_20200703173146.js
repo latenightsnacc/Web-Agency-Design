@@ -2,10 +2,6 @@ $('#portfolio-btn').click(function () {
     $('#menu-modal').hide();
 });
 
-$('#header-btn').click(function () {
-    $('#menu-modal').hide();
-});
-
 $('#about-btn').click(function () {
     $('#menu-modal').hide();
 });
@@ -69,6 +65,18 @@ $(".contact-form")
         }
     })
 
+
+// Display phone input box
+
+document.getElementById('phone-btn').addEventListener('click', () => {
+    if(document.getElementById('phone-input').style.display === 'none'){
+        document.getElementById('phone-input').style.display = 'block';
+        document.getElementById('phone-btn').style.display = 'none';
+    } else {
+        document.getElementById('phone-input').style.display = 'none';
+        document.getElementById('phone-btn').style.display = 'block';
+    }
+});
 // Form submission
 $(function() {
     // Get the form.

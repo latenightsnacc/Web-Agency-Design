@@ -16,7 +16,7 @@
 
     &::before, &::after {
       content: '';
-      border: 1em solid rgba(#333,0.5);
+      border: 1em solid #333;
       border-radius: 50%;
       width: inherit;
       height: inherit;

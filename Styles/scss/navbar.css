@@ -30,7 +30,7 @@
           justify-content: center;
   z-index: 10;
   padding: 7px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {
@@ -67,6 +67,9 @@
 @media screen and (max-width: 600px) {
   #download {
     display: none;
+  }
+  .menuIcon {
+    bottom: 10% !important;
   }
 }
 /*# sourceMappingURL=navbar.css.map */

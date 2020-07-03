@@ -96,5 +96,13 @@
   .content p {
     padding-top: 10px;
   }
+  section.header #start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigate {
+    display: none;
+  }
 }
 /*# sourceMappingURL=header.css.map */

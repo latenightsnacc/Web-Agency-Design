@@ -85,8 +85,8 @@
     }
 
     section.header{
-        #start {
-            display: flex;
+        .navigate {
+            display: block;
         }
     }
     .navigate {
