@@ -1,0 +1,54 @@
+@import 'variables';
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+// Menu Icon
+.menuIcon {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 10;
+    padding: 7px;
+    background-color: transparent;
+
+    .long-bar,.short-bar{
+        border: 2px solid $dark;
+        margin-bottom: 5px;
+    }
+    .long-bar{
+        width: 30px;
+    }
+    .short-bar{
+        width: 18px;
+    }
+
+    &:hover{
+        .long-bar{
+            width: 18px;
+            transition: width 300ms ease-in-out 0s;
+            
+        }
+        .short-bar{
+            width: 30px;
+            
+        }
+    }
+}
+
+#download {
+    position: fixed;
+    bottom: 10%;
+    margin-top: 10px;
+    right: 2%;
+    z-index: 10;
+}

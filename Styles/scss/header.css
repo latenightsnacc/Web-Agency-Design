@@ -93,15 +93,15 @@ section.header a.active {
 
 .navigate {
   border: 1px solid black;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: white;
-  border-radius: 50%;
+  background-color: transparent;
+  color: black;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 5px 0px;
+  border-radius: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -111,7 +111,7 @@ section.header a.active {
 }
 
 .navigate:hover {
-  color: whitesmoke;
+  color: black;
 }
 
 @media screen and (max-width: 320px) {

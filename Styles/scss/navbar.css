@@ -18,9 +18,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  bottom: 10%;
+  bottom: 20%;
   right: 2%;
-  border: .5px solid black;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -28,7 +27,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
-  padding: 5px;
+  padding: 7px;
   background-color: transparent;
 }
 
@@ -38,20 +37,28 @@
 }
 
 .menuIcon .long-bar {
-  width: 33px;
+  width: 30px;
 }
 
 .menuIcon .short-bar {
-  width: 20px;
+  width: 18px;
 }
 
 .menuIcon:hover .long-bar {
-  width: 20px;
+  width: 18px;
   -webkit-transition: width 300ms ease-in-out 0s;
   transition: width 300ms ease-in-out 0s;
 }
 
 .menuIcon:hover .short-bar {
-  width: 33px;
+  width: 30px;
+}
+
+#download {
+  position: fixed;
+  bottom: 10%;
+  margin-top: 10px;
+  right: 2%;
+  z-index: 10;
 }
 /*# sourceMappingURL=navbar.css.map */

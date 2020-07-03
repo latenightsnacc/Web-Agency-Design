@@ -30,9 +30,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  bottom: 10%;
+  bottom: 20%;
   right: 2%;
-  border: .5px solid black;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -40,7 +39,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
-  padding: 5px;
+  padding: 7px;
   background-color: transparent;
 }
 
@@ -50,21 +49,29 @@
 }
 
 .menuIcon .long-bar {
-  width: 33px;
+  width: 30px;
 }
 
 .menuIcon .short-bar {
-  width: 20px;
+  width: 18px;
 }
 
 .menuIcon:hover .long-bar {
-  width: 20px;
+  width: 18px;
   -webkit-transition: width 300ms ease-in-out 0s;
   transition: width 300ms ease-in-out 0s;
 }
 
 .menuIcon:hover .short-bar {
-  width: 33px;
+  width: 30px;
+}
+
+#download {
+  position: fixed;
+  bottom: 10%;
+  margin-top: 10px;
+  right: 2%;
+  z-index: 10;
 }
 
 .menuList a {
@@ -161,15 +168,15 @@ section.header a.active {
 
 .navigate {
   border: 1px solid black;
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  color: white;
-  border-radius: 50%;
+  background-color: transparent;
+  color: black;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 5px 0px;
+  border-radius: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -179,7 +186,7 @@ section.header a.active {
 }
 
 .navigate:hover {
-  color: whitesmoke;
+  color: black;
 }
 
 @media screen and (max-width: 320px) {
@@ -285,11 +292,14 @@ section.portfolio {
   background-color: #F8F8FF;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  position: relative;
 }
 
-section.portfolio .section-title {
-  padding: 15px;
+.logos a {
+  margin-top: 15px;
+}
+
+.logos img {
+  width: 120px;
 }
 
 .portfolio-menu {
@@ -303,7 +313,6 @@ section.portfolio .section-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80vh;
 }
 
 .portfolio-menu .portfolio-list li {
@@ -352,15 +361,14 @@ a.item.active {
 }
 
 @media screen and (max-width: 600px) {
-  section.portfolio {
-    padding-bottom: 100px;
-  }
-  section.portfolio .menuItems {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 10px;
-    z-index: 10;
+  section.portfolio .logos .col-sm-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -895,7 +903,7 @@ section.contact .cube:nth-child(6) {
 }
 
 .uk-modal-dialog {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -920,6 +928,10 @@ section.contact .cube:nth-child(6) {
           align-items: flex-start !important;
 }
 
+.uk-modal-dialog .menuList li {
+  color: black;
+}
+
 .uk-modal-dialog .menuList li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,6 +940,8 @@ section.contact .cube:nth-child(6) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+  color: #000;
 }
 
 .uk-modal-dialog .menuList li a .menu-link {
@@ -939,7 +953,7 @@ section.contact .cube:nth-child(6) {
 
 .uk-modal-dialog .container {
   z-index: 1;
-  background-color: transparent;
+  background-color: white;
 }
 
 .uk-modal-dialog .cube {

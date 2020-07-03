@@ -33,7 +33,7 @@
 }
 
 .uk-modal-dialog {
-  background-color: whitesmoke;
+  background-color: white;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -58,6 +58,10 @@
           align-items: flex-start !important;
 }
 
+.uk-modal-dialog .menuList li {
+  color: black;
+}
+
 .uk-modal-dialog .menuList li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,6 +70,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+  color: #000;
 }
 
 .uk-modal-dialog .menuList li a .menu-link {
@@ -77,7 +83,7 @@
 
 .uk-modal-dialog .container {
   z-index: 1;
-  background-color: transparent;
+  background-color: white;
 }
 
 .uk-modal-dialog .cube {
