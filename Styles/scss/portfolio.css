@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
 section.portfolio {
-  background-color: #F8F8FF;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background-color: white;
 }
 
 .logos a {
@@ -24,30 +22,6 @@ section.portfolio {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.portfolio-menu .portfolio-list li {
-  margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolio-menu .portfolio-list li:hover a.item {
-  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-}
-
-.item-title {
-  color: white !important;
-  background: rgba(0, 0, 0, 0.5);
-  font-family: "IBM Plex Sans", sans-serif;
-  letter-spacing: .1em;
-  text-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-  padding: 10px;
 }
 
 a.item {

@@ -19,6 +19,8 @@
           flex-direction: column;
   position: fixed;
   bottom: 20%;
+  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
   right: 2%;
   height: 50px;
   width: 50px;
@@ -28,7 +30,7 @@
           justify-content: center;
   z-index: 10;
   padding: 7px;
-  background-color: transparent;
+  background-color: white;
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {

@@ -80,7 +80,7 @@ input, textarea {
 }
 .contact-form .input-block label {
     padding: 0 10px;
-    background: #fff;
+    background: transparent;
     position: absolute;
     left: 8px;
     top: 20px;
@@ -98,7 +98,7 @@ input, textarea {
     border: medium none;
     border-radius: 0;
     box-shadow: none;
-    color: #333;
+    color: #fff;
     font-size: 18px;
     height: 40px;
     padding: 0;
@@ -132,7 +132,7 @@ input, textarea {
 
 }
 .contact-form .square-button {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 300;
@@ -146,7 +146,7 @@ input, textarea {
     background-color: transparent;
 
     &:hover, &:focus {
-        background-color: transparent;
+        background-color: rgba(0,0,0, 0.5);;
         font-weight: bold;
     }
 }

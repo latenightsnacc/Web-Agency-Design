@@ -27,7 +27,8 @@
     padding: 10px 20px;
     color: black;
     text-transform: capitalize;
-    background-color: transparent;
+    background-color: white;
+    box-shadow: $btn-shadow;
     text-align: center;
     line-height: 20px;
     border: 1px solid black;
@@ -61,6 +62,7 @@
     
     .content {
         h1{
+            padding-top: 30px;
             font-size: 30px !important;
             line-height: 40px;
         }
@@ -68,7 +70,11 @@
             padding-top: 10px;
         }
     }
- 
+    .text{
+       margin-bottom: 150px !important;
+
+    }
+    
 }
 @media screen and (max-width:600px){
 
@@ -76,12 +82,17 @@
         display: block;
         height: auto;
         h1{
+            padding-top: 50px;
             font-size: 40px;
             line-height: 60px;
         }
         p{
             padding-top: 10px;
         }
+    }
+    .text{
+        height: 70vh;
+        padding-left: 15px;
     }
     
 }

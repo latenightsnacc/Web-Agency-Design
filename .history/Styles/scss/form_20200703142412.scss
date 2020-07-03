@@ -63,7 +63,7 @@
 }
 
 .contact-form .input-block.focus {
-    background-color: transparent;
+    background-color: rgba(0,0,0, 0.5);;
     border: solid 1px rgba(0,0,0, 0.5);;
 }
 
@@ -80,7 +80,7 @@ input, textarea {
 }
 .contact-form .input-block label {
     padding: 0 10px;
-    background: #fff;
+    background: rgba(0,0,0, 0.5);;
     position: absolute;
     left: 8px;
     top: 20px;
@@ -88,7 +88,7 @@ input, textarea {
     margin: 0;
     font-weight: 300;
     z-index: 1;
-    color: #333;
+    color: #000;
     font-size: 18px;
     line-height: 20px;
 }
@@ -146,7 +146,7 @@ input, textarea {
     background-color: transparent;
 
     &:hover, &:focus {
-        background-color: transparent;
+        background-color: rgba(0,0,0, 0.5);;
         font-weight: bold;
     }
 }
