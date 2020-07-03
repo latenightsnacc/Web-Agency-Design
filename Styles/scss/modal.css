@@ -33,7 +33,7 @@
 }
 
 .uk-modal-dialog {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -70,7 +70,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #000;
 }
 
@@ -83,7 +83,7 @@
 
 .uk-modal-dialog .container {
   z-index: 1;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .uk-modal-dialog .cube {

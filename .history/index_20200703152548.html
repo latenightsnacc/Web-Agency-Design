@@ -10,8 +10,16 @@
     <!--Font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="Styles/scss/Stylesheet.min.css">
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
     <title>Ceeless || Licorne Technologies</title>
+
+    <style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loader { display: none;  }
+		.js #loader { display: block; }
+	</style>
+	
 </head>
 <body class="background">
     <div class="cube"></div>
@@ -20,11 +28,15 @@
     <div class="cube"></div>
     <div class="cube"></div>
     <div class="cube"></div>
-    <!--PreLoader-->
-    <div class="loader_bg">
-        <div class="loader"></div>
-    </div>
-    <main class="wrapper pt-3" uk-scrollspy="target: > section; cls: uk-animation-fade; delay:500; repeat: true">
+    <main class="wrapper pt-3" uk-scrollspy="target: > section; cls: uk-animation-slide-right; delay:1500; repeat: true">
+        
+        <!--PreLoader-->
+        <div class="loader" id="loader">
+            <div class="letters">
+              <h3>Welcome</h3>
+            </div>
+            <span></span>
+        </div> 
         <!--Navigation Bar-->
         <nav class="container-fluid  navbar">
             <div class="logo pl-1" >
@@ -72,20 +84,20 @@
                                         <a href="index.html" ><i class="fa fa-home"></i><span class="menu-link">Welcome</span> </a>
                                     </li>
                                     <li class="uk-animation-slide-right">
-                                        <a href="#what-we-do"><i class="fa fa-info" aria-hidden="true"></i><span class="menu-link">What we do</span></a>
+                                        <a href="index.html#portfolio"><i class="fa fa-tasks" aria-hidden="true"></i><span class="menu-link">What we've done</span></a>
                                     </li>
                                     <li class="uk-animation-slide-right">
-                                        <a href="#portfolio" id="portfolio-btn"><i class="fa fa-tasks" aria-hidden="true"></i><span class="menu-link">What we've done</span></a>
+                                        <a href="index.html#what-we-do"><i class="fa fa-info" aria-hidden="true"></i><span class="menu-link">What we do</span></a>
                                     </li>
                                     <li class="uk-animation-slide-right">
-                                        <a href="#about"><i class="fa fa-users"></i><span class="menu-link">About us</span></a>
+                                        <a href="index.html#about"><i class="fa fa-users"></i><span class="menu-link">About us</span></a>
                                     </li>
             
                                     <li class="uk-animation-slide-right">
                                         <a  uk-toggle="target: #contact-modal"><i class="fa fa-send-o"></i><span class="menu-link">Talk to us</span></a>
                                     </li>
-                                    <li class="uk-animation-slide-right" id="menu-download">
-                                        <a href="/ceeless.pdf" download="Ceeless Portfolio" title="Download Brochure"><i class="fa fa-download"></i><span class="menu-link">Download Brochure</span></a>
+                                    <li class="uk-animation-slide-right">
+                                        <a href="index.html#about"><i class="fa fa-download"></i><span class="menu-link">Download Brochure</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -371,10 +383,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Js/form.js"></script>
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 2500);
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.loader');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
     </script>
-    
 </body>
 </html>
