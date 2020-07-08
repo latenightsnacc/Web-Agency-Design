@@ -15,16 +15,12 @@
     z-index: 10;
     padding: 7px;
     background-color: rgba(white, 0.5);
-    color: black;
     box-shadow: $btn-shadow;
-}
-.theme-text-color {
-    color: lightgrey !important;
 }
 .menuIcon {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    
     height: 50px;
     width: 50px;
     justify-content: center;

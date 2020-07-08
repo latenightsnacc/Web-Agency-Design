@@ -10,7 +10,7 @@
     <!--Font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.min.css">
     <title>Ceeless || Licorne Technologies</title>
 </head>
 <body class="background">
@@ -32,17 +32,14 @@
                 <a href="index.html">
                     <img src="assets/Logo/ceeless.png" alt="Ceeless logo" style="width: 120px;">
                 </a>
-                <div class="menu pr-1">
-                    <a class="menuIcon" href="#menu-modal" uk-toggle title="Menu">
-                        <span class="long-bar"></span>
-                        <span class="short-bar"></span>
-                        <span class="long-bar"></span>
-                    </a>
-                </div>
             </div>
-
             <div class="menu pr-1">
                 <button uk-toggle="target: #contact-modal" class="action-btn" style="border-radius: 20px;">Talk To us</button>
+                <a class="menuIcon" href="#menu-modal" uk-toggle title="Menu">
+                    <span class="long-bar"></span>
+                    <span class="short-bar"></span>
+                    <span class="long-bar"></span>
+                </a>
             </div>
         </nav>
         <!--Menu Modal-->
@@ -142,7 +139,7 @@
                                 <div class="d-flex flex-wrap text-center">
                                     <div class="dot">
                                         <div class="service-title">
-                                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                                            
                                             I.T Support
                                         </div>
                                     </div>
@@ -292,7 +289,7 @@
                 <h2 class="section-title">Talk to us</h2>
                 <p>Work with us on your next project or get in touch for a chat.</p>
                 <p> <i class="fa fa-map-marker"></i>No 19 Kaltungo Street, Garki 2, Abuja Nigeria.</p>
-                <a href="tel:+2348129793809" style="color:black; font-weight: 600; font-size: 20px;">(+234) 08129793809</a>
+                <a href="tel:+2348129793809" style="color:black">(+234) 08129793809</a>
                 <div class="contact-details">            
                     <a href="tel:+2348129793809" class="contact-link">
                         <i class="fa fa-phone"></i>
@@ -388,19 +385,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Js/form.js"></script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API='c85e87cecbf4367beeaa8012cde838ba45e0a968'||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5808a6e1f434cc6ca45797f7/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
     <script>
         setTimeout(function(){
             $('.loader_bg').fadeToggle();

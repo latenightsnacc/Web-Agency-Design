@@ -365,6 +365,9 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
+                                <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LeWB68ZAAAAALbzEng3VhFbkeqTD5MU05pp7TAC"></div>
+                            </div>
+                            <div class="col-sm-12">
                                 <button class="square-button">Send</button>
                             </div>
                         </form>
@@ -401,6 +404,12 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <!--ReCAPTCHA Script-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
     <script>
         setTimeout(function(){
             $('.loader_bg').fadeToggle();

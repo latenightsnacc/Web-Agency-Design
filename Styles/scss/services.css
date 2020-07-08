@@ -108,7 +108,26 @@ section.what-we-do .cube:nth-child(6) {
 }
 
 .dot .service-title {
-  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.dot .service-title i {
+  font-size: 50px;
+  color: black;
+  font-weight: 500;
 }
 
 .dot:hover {

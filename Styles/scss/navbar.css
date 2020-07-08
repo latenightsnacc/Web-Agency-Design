@@ -9,6 +9,23 @@
           justify-content: space-between;
 }
 
+.floatingIcon {
+  position: fixed;
+  bottom: 20%;
+  right: 2%;
+  border-radius: 50%;
+  z-index: 10;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
+}
+
+.theme-text-color {
+  color: lightgrey !important;
+}
+
 .menuIcon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,20 +34,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
-  bottom: 20%;
-  -webkit-box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-          box-shadow: 2px 20px 25px -15px rgba(0, 0, 0, 0.54);
-  right: 2%;
+  padding-left: 20px;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 10;
-  padding: 7px;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .menuIcon .long-bar, .menuIcon .short-bar {
