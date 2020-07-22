@@ -67,19 +67,8 @@
     z-index: 10;
 }
 
-@media screen and (min-width:601px){
-    .logo{
-        padding-left: 7%;
-    }
-    .logo-mobile{
-        display: none;
-    }
-    .m-btn{
-        padding-right: 7%;
-    }
-}
 @media screen and (max-width:600px){
-    #download, .logo-web{
+    #download{
         display: none;
     }
     .menuIcon{

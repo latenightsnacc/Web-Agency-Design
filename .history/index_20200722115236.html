@@ -10,7 +10,7 @@
     <!--Font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="Styles/scss/Stylesheet.min.css">
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
 
     <title>Ceeless || Licorne Technologies</title>
 </head>
@@ -28,24 +28,21 @@
     </div>
     <main class="wrapper pt-3" uk-scrollspy="target: > section; cls: uk-animation-fade; delay:500; repeat: true">
         <!--Navigation Bar-->
-        <nav class="container-fluid  navbar bg-light fixed-top">
-            <div class="logo" >
-                <div class="menu pr-5">
+        <nav class="container-fluid  navbar">
+            <div class="logo pl-5" >
+                <a href="index.html">
+                    <img src="assets/Logo/ceelesslogoblack2.png" alt="Ceeless logo" style="width: 120px;">
+                </a>
+                <div class="menu pr-1">
                     <a class="menuIcon" href="#menu-modal" uk-toggle title="Menu">
                         <span class="long-bar"></span>
                         <span class="short-bar"></span>
                         <span class="long-bar"></span>
                     </a>
                 </div>
-
-                <a href="index.html">
-                    <img src="assets/Logo/ceelesslogoblack2.png" class="logo-web" alt="Ceeless logo" style="width: 120px;">
-                    <img src="assets/Logo/ceeiconblack.png" class="logo-mobile" alt="Ceeless logo" style="height: 40px;">
-                </a>
-                
             </div>
 
-            <div class="menu m-btn">
+            <div class="menu pr-5">
                 <button uk-toggle="target: #contact-modal" class="action-btn" style="border-radius: 20px;">Talk To us</button>
             </div>
         </nav>
