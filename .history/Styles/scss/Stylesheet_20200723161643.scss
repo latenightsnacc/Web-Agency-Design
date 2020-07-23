@@ -1,0 +1,74 @@
+@import 'variables';
+@import 'navbar';
+@import 'header';
+@import 'portfolio';
+@import 'services';
+@import 'about';
+@import 'contact';
+@import 'background';
+@import 'modal';
+@import 'form';
+@import 'footer';
+@import 'loader';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: $font;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+html {
+    overflow-x: hidden !important;
+    background-color: white;
+    width: 100%;
+}
+.uk-modal-close-full, .uk-close-large {
+    background-color: transparent !important;
+}
+body{
+    position: relative;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-title {
+    font-family: $font;
+    text-shadow: $btn-shadow;
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+p {
+    color: black;
+    line-height: 40px;
+    font-size:22px;
+    font-family: $font;
+    font-weight: 500;
+}
+.col-md-3,.col-md-6.right,.col-md-4,.col-md-8,.col-md-9 {
+    background-color: transparent;
+}
+
+@media screen and (max-width:600px){
+    .section-title{
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+

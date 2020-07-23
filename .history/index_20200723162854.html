@@ -20,9 +20,9 @@
     <!--Font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="Styles/scss/Stylesheet.min.css">
+    <link rel="stylesheet" href="Styles/scss/Stylesheet.css">
     <!--Favicon-->
-    <link rel='icon' href="assets/Logo/ceeiconblack.png" type="image/png" sizes="16x16"/ >
+    <link rel='icon' href="assets/logos/ceeiconblack.png" type="image/png" sizes="16x16"/ >
 
     <title>Ceeless |Licorne Technologies</title>
 </head>
@@ -404,7 +404,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Js/form.js"></script>
-    <script  src="Js/main.js"></script>
+    <script >
+        $(function () { 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500) { 
+                    $('.navbar .logo img').attr('src','/assets/Logo/ceeiconblack.png');
+                }
+                if ($(this).scrollTop() < 500) { 
+                    $('.navbar .logo img').attr('src','/assets/Logo/ceelesslogoblack.png');
+                }
+            })
+        });
+    </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API='c85e87cecbf4367beeaa8012cde838ba45e0a968'||{}, Tawk_LoadStart=new Date();
