@@ -5,14 +5,13 @@ $(".logo-mobile").hide();
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     
-    if( scroll > position ){
-        
-        $(".logo-web").fadeOut('slow');
-        $(".logo-mobile").fadeIn('slow');
+    if( $('.navbar').scrollTop() === 0){
+        $(".logo-mobile").hide();
+        $('.logo-web').show();
     } else {
         console.log('scrollDown');
-        $(".logo-web").show();
-        $(".logo-mobile").hide(); 
+        $(".logo-web").hide();
+        $(".logo-mobile").show(); 
     }      
     // position = scroll;
 });

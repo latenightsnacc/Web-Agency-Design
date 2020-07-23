@@ -6,9 +6,8 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     
     if( scroll > position ){
-        
-        $(".logo-web").fadeOut('slow');
-        $(".logo-mobile").fadeIn('slow');
+        $(".logo-mobile").show();
+        $(".logo-web").hide().fadeOut('slow');
     } else {
         console.log('scrollDown');
         $(".logo-web").show();
