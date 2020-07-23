@@ -6,11 +6,11 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     
     if( scroll > position ){
-        $('.navbar').addClass('bg-light');
+        $('.navbar').addClass('.bg-light');
         $(".logo-web").fadeOut('slow');
         $(".logo-mobile").fadeIn('slow');
     } else {
-        $('.navbar').removeClass('bg-light');
+        $('.navbar').removeClass('.bg-light');
         $(".logo-web").show();
         $(".logo-mobile").hide(); 
     }      
