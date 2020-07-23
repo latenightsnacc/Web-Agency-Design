@@ -1,6 +1,6 @@
 var position = $(window).scrollTop(); 
 $(".logo-mobile").hide();
-$('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px');
+$('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px').addClass('active');
 // should start at 0
 
 $(window).scroll(function() {
@@ -18,10 +18,10 @@ $(window).scroll(function() {
     
     if( scroll > position ){
         $('.navbar').addClass('bg-light');
-        $('.logo-web').attr('src', "assets/Logo/ceeiconblack.png").height('25px').width('auto').addClass('fade-in');
+        $('.logo-web').attr('src', "assets/Logo/ceeiconblack.png").height('30px').width('auto').addClass('logo-effect').addClass('active');
     } else {
         $('.navbar').removeClass('bg-light');
-        $('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px').height('auto').addClass('fade-in');; 
+        $('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px').addClass('logo-effect').addClass('active'); 
     }    
     // position = scroll;
 });

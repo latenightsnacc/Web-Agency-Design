@@ -18,10 +18,10 @@ $(window).scroll(function() {
     
     if( scroll > position ){
         $('.navbar').addClass('bg-light');
-        $('.logo-web').attr('src', "assets/Logo/ceeiconblack.png").height('25px').width('auto').addClass('fade-in');
+        $('.logo-web').attr('src', "assets/Logo/ceeiconblack.png").height('30px').width('auto').delay(1000).fadeIn(1500);
     } else {
         $('.navbar').removeClass('bg-light');
-        $('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px').height('auto').addClass('fade-in');; 
+        $('.logo-web').attr('src', "assets/Logo/ceelesslogoblack2.png").width('170px').fadeIn('slow'); 
     }    
     // position = scroll;
 });

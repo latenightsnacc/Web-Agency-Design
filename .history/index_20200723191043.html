@@ -28,37 +28,13 @@
 
     <title>Ceeless |Licorne Technologies</title>
     <style>
-        .fade-in {
-animation: fadeIn ease 20s;
--webkit-animation: fadeIn ease 20s;
--moz-animation: fadeIn ease 20s;
--o-animation: fadeIn ease 20s;
--ms-animation: fadeIn ease 20s;
-}
-@keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
+        .logo-effect {
+            opacity: 0;
+            transition: opacity 1.5s ease-in 3.5s;
+        }
+        .active {
+            opacity: 1;
+        }
         .bg-light {
             background-color: white !important;
             width: 100%;
@@ -99,7 +75,10 @@ animation: fadeIn ease 20s;
                     <!-- <img src="assets/Logo/ceeiconblack.png" class="logo-mobile" alt="Ceeless logo" style="height: 30px;">
 
                     <img src="assets/Logo/ceelesslogoblack2.png" class="logo-web" alt="Ceeless logo" style="width: 170px;"> -->
-                    <img src="" class="logo-web" alt="Ceeless logo" />
+                    <div class="uk-animation-fade uk-animation-reverse">
+                        <img src="" class="logo-web " alt="Ceeless logo">
+                    </div>
+                    
                 </a>
                 
             </div>
